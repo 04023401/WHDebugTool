@@ -96,7 +96,7 @@ static id _instance;
 #pragma mark - Window
 
 - (void)setDebugWindow {
-    CGFloat debugWindowY = debugTool_iPhoneX() ? 30 : 0;
+    CGFloat debugWindowY = debugTool_iPhoneX() ? 30 : 20;
     self.debugWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, debugWindowY, kDebugScreenWidth, kDebugLabelHeight)];
     self.debugWindow.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
     self.debugWindow.windowLevel = UIWindowLevelAlert;
